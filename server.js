@@ -47,6 +47,6 @@ app.get('/api/:name', (request, response)=>{
 
 
 //Listen
-app.listen(PORT, ()=>{
+app.listen(prcoess.env.PORT || PORT, ()=>{
     console.log(`The server is now running on port ${PORT}! Rad my dude!`)
 })
